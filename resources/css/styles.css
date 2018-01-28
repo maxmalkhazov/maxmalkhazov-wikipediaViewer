@@ -151,6 +151,8 @@ html {
 
 @media only screen and (max-width: 767px) {
 	
+	body {background-position: auto; background-size: auto;}
+	
 	.body--active {
 		background: #085078;  /* fallback for old browsers */
 		background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
@@ -161,4 +163,6 @@ html {
 	.main__headline {font-size: 3rem;}
 	
 	.input {margin-top: 30px;}
+	
+	.userInput {width: 250px;}
 }
