@@ -56,10 +56,11 @@ html {
 }
 
 .btn {
+	border-radius: 15px;
 	text-decoration: none;
 	color: white;
 	background-color: #f39c12;
-	padding: .5rem 1.2rem;
+	padding: .75rem 1.1rem;
 	display: block;
 	width: 75px;
 	margin-right: auto;
@@ -68,11 +69,12 @@ html {
 }
 
 .btn-random {
+	border-radius: 15px;
 	text-decoration: none;
 	border: none;
 	color: white;
 	background-color: #f39c12;
-	padding: .5rem 1.2rem;
+	padding: .75rem 1.5rem;
 	display: inline-block;
 	width: auto;
 	margin-right: auto;

@@ -45,7 +45,7 @@ function activate() {
 			    $(".results__output-field").append(
 			    	"<div>" + "<h4>" + data[1][i] + "</h4>" +
 			    	"<p>" + data[2][i] + "</p>" +
-			    	"<p>" + "<a href=" + data[3][i] + " target='_blank'> " + data[3][i] + "</a>" + "</p>" + "</div>");
+			    	"<p>" + "<a href=" + data[3][i] + " class='dis-link' target='_blank'> More...</a>" + "</p>" + "</div>");
 			}
 		}
 	});
@@ -73,9 +73,3 @@ function init() {
 	$(".results__output-field").empty();
 	$(".results__output-field").addClass("results__output-field--active");
 }
-
-
-
-
-
-
