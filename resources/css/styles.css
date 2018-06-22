@@ -56,37 +56,37 @@ html {
 }
 
 .btn {
-	border-radius: 15px;
+	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
-	background-color: #f39c12;
-	padding: .75rem 1.1rem;
-	display: block;
-	width: 75px;
-	margin-right: auto;
-	margin-left: auto;
-	font-size: 1.2rem;
-}
-
-.btn-random {
-	border-radius: 15px;
-	text-decoration: none;
-	border: none;
-	color: white;
-	background-color: #f39c12;
-	padding: .75rem 1.5rem;
+	color: #fff;
+	background: #0984e3;
+	margin-left: 1rem;
+	padding: 1rem 2.5rem;
 	display: inline-block;
-	width: auto;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 15px;
-	font-size: 1.2rem;
+	border-radius: 6.25rem;
+	transition: all .2s;
+	position: relative;
+	
+	/*// change for the <button> element*/
+	border: none;
 	cursor: pointer;
 }
 
-.btn:hover,
-.btn-random:hover {
-	background-color: #d8890b;
+.btn:nth-child(1) {
+	margin-left: 0;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, .2);
+	background: #065ea2;
+}
+
+.btn:active,
+.btn:focus {
+	outline: none;
+	transform: translateY(-1px);
+	box-shadow: 0 .3rem .625rem rgba(0, 0, 0 .2);
 }
 
 .results {

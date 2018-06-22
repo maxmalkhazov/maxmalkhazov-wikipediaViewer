@@ -4,7 +4,7 @@ window.onload = function() {
 
 var userInput;
 
-$(".btn").on("click", function() {
+$("#btn-main").on("click", function() {
 	userInput = $(".userInput").val();
 	if (userInput !== "") {
 		$("#ui-id-1").hide();
