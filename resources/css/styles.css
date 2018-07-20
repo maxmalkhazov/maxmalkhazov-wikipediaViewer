@@ -1,3 +1,9 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	box-sizing: border-box;
 	font-family: Roboto, Arial, sans-serif;
@@ -13,8 +19,19 @@ body {
 
 }
 
-html {
-	height: 100%;
+
+.header {
+	margin-bottom: 4rem;
+	background: #0984e3;
+	padding: 3rem 0;
+}
+
+.title {
+	color: #fff;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .main {
@@ -30,15 +47,6 @@ html {
 	padding-top: 40px;
 }
 
-.main__headline {
-	text-align: center;
-	color: white;
-	font-weight: 200;
-	font-size: 4rem;
-	margin-top: 85px;
-	text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-}
-
 .input {
 	text-align: center;
 }
@@ -48,11 +56,17 @@ html {
 }
 
 .userInput {
-	margin-bottom: 15px;
 	height: 2rem;
-	width: 300px;
+	width: 400px;
 	font-size: 1.3rem;
 	outline: none;
+	display: block;
+	margin: 0 auto 1.5rem auto;
+	padding: 1.25rem .5rem;
+}
+
+.form {
+	display: inline-block;
 }
 
 .btn {
@@ -60,7 +74,6 @@ html {
 	text-decoration: none;
 	color: #fff;
 	background: #0984e3;
-	margin-left: 1rem;
 	padding: 1rem 2.5rem;
 	display: inline-block;
 	border-radius: 6.25rem;
@@ -73,7 +86,7 @@ html {
 }
 
 .btn:nth-child(1) {
-	margin-left: 0;
+	margin-left: 1rem;
 }
 
 .btn:hover {
@@ -115,7 +128,7 @@ html {
 }
 
 .results__output-field div:hover {
-	border: 5px solid #f39c12;
+	border: 5px solid #0984e3;
 }
 
 .results__output-field h4 {
@@ -137,23 +150,15 @@ html {
 	color: #d8890b;
 }
 
-@media only screen and (max-width: 1023px) {
-	
-    .body--active {
-		background: #085078;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	}
-	.main__headline {font-size: 4rem;}
-	
-	.input {margin-top: 30px;}
-}
 
 
 @media only screen and (max-width: 767px) {
 	
 	body {background-position: auto; background-size: auto;}
+	
+	.form {display: block;}
+	.btn:nth-child(1) {margin-left: 0; margin-top: 1.5rem;}
 	
 	.body--active {
 		background: #085078;  /* fallback for old browsers */
@@ -162,9 +167,9 @@ html {
 
 
 	}
-	.main__headline {font-size: 3rem;}
+	.title {font-size: 2.5rem;}
 	
 	.input {margin-top: 30px;}
 	
-	.userInput {width: 250px;}
+	.userInput {width: 300px;}
 }

@@ -3,6 +3,12 @@
 <head>
 	<title>Wikipedia Viewer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta property="og:title" content="Wikipedia Viewer"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="https://image.ibb.co/iWvg6y/Hangman.png"/>
+	<meta property="og:description" content="Based on preset preferences for subject and difficulty level, the user can play the classic hangman game."/>
+	<meta property="og:url" content="https://maxmalkhazov-hangman.netlify.com/">
+	<link rel="icon" type="image/png" href="https://image.ibb.co/kb8W6y/m_logo.png">
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -11,12 +17,15 @@
 </head>
 <body>
 	
+	<div class="header">
+			<h1 class="title">Wikipedia Viewer</h1>
+	</div>
+	
 	<div class="main">
-		<h2 class="main__headline">Wikipedia Viewer</h2>
 		<div class="input input--active row">
 			<input type="text" id="autocomplete" class="userInput">
-			<a href="#" id="btn-main" class="btn">Submit</a>
-			<form action="https://en.wikipedia.org/wiki/Special:Random" target="_blank" method="GET">
+			<button id="btn-main" class="btn">Submit</button>
+			<form class="form" action="https://en.wikipedia.org/wiki/Special:Random" target="_blank" method="GET">
 				<button class="btn">Random Article</button>
 			</form>
 		</div>
